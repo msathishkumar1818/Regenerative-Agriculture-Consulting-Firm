@@ -320,9 +320,9 @@ function highlightActiveNav() {
         if (topLink) topLink.classList.add('active');
       }
       
-      const parentMobileItem = link.closest('.mobile-item');
+      const parentMobileItem = link.closest('.mobile-item, .drawer-nav-item');
       if (parentMobileItem) {
-        const mobileTopLink = parentMobileItem.querySelector('.mobile-nav-link');
+        const mobileTopLink = parentMobileItem.querySelector('.mobile-nav-link, .drawer-accordion-btn');
         if (mobileTopLink) mobileTopLink.classList.add('active');
       }
     }

@@ -819,25 +819,44 @@ html.dark .mobile-drawer {
   flex-direction: column;
   gap: 0.35rem;
   margin-top: 1rem;
+  width: 100%;
+}
+
+.mobile-item,
+.drawer-nav-item {
+  width: 100%;
+  display: block;
 }
 
 .mobile-nav-link,
-.drawer-link {
+.drawer-link,
+.drawer-accordion-btn {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
   padding: 0.75rem 0.9rem;
   font-size: 0.95rem;
   font-weight: 600;
   color: var(--text-main);
+  background: transparent;
+  border: none;
   border-radius: var(--radius-sm);
+  cursor: pointer;
+  text-align: start;
+  font-family: inherit;
   transition: background var(--transition-fast), color var(--transition-fast);
 }
 
 .mobile-nav-link:hover,
 .mobile-nav-link.active,
+.mobile-item.accordion-open > .mobile-nav-link,
 .drawer-link:hover,
-.drawer-link.active {
+.drawer-link.active,
+.drawer-accordion-btn:hover,
+.drawer-accordion-btn.active,
+.drawer-nav-item.accordion-open > .drawer-accordion-btn {
   background-color: rgba(82, 183, 136, 0.1);
   color: var(--color-sprout);
 }
@@ -863,27 +882,6 @@ html.dark .mobile-drawer {
 .mobile-item.accordion-open .mobile-nav-link .dropdown-chevron,
 .drawer-nav-item.accordion-open .drawer-accordion-btn .accordion-arrow {
   transform: rotate(180deg);
-}
-
-.drawer-accordion-btn {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0.75rem 0.9rem;
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: var(--text-main);
-  background: transparent;
-  border: none;
-  border-radius: var(--radius-sm);
-  cursor: pointer;
-  transition: background var(--transition-fast), color var(--transition-fast);
-}
-
-.drawer-accordion-btn:hover {
-  background-color: rgba(82, 183, 136, 0.1);
-  color: var(--color-sprout);
 }
 
 .accordion-arrow {
