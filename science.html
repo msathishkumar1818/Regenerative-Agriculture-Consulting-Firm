@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soil Science & Microscopy Methodology | Regenerative Agriculture Consulting Firm</title>
+  <meta name="description"
+    content="Peer-reviewed soil microbiology assays, optical hemocytometer shadow-contrast microscopy, F:B biomass ratios, and NIR carbon spectroscopy protocols.">
+
+  <!-- Favicon using official brand logo -->
+  <link rel="icon" type="image/png" href="assets/images/logo/logo.png">
+
+  <!-- Core Design System & Responsive Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css?v=2.3">
+  <link rel="stylesheet" href="assets/css/responsive.css?v=2.3">
+</head>
+
+<body>
+
+  <!-- =======================================================================
+       BRANDED PRELOADER
+       ======================================================================= -->
+  <div id="preloader" aria-hidden="true">
+    <div class="loader-emblem">
+      <img src="assets/images/logo/logo.png" alt="RegenAg Logo Loader" class="loader-logo-img">
+      <div class="loader-ring"></div>
+    </div>
+    <div class="loader-bar-wrap">
+      <div class="loader-bar"></div>
+    </div>
+    <span class="loader-text">Loading Cytological Lab Assays</span>
+  </div>
+
+  <!-- =======================================================================
+       FIXED COMPACT HEADER (Single line desktop, fixed top)
+       ======================================================================= -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+
+      <!-- Brand Identity [Logo + Brand Name + Subtitle] -->
+      <a href="index.html" class="brand-link" aria-label="Regenerative Agriculture Consulting Firm Home">
+        <img src="assets/images/logo/logo.png" alt="Regenerative Agriculture Consulting Firm Emblem"
+          class="brand-logo-img">
+        <div class="brand-info">
+          <span class="brand-title">Regenerative Agriculture</span>
+          <span class="brand-subtitle">Consulting Firm</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation (Exactly 6 Nav Items on One Line) -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+
+          <!-- 1. Home (Click-Only Dropdown: Home 1, Home 2) -->
+          <li class="nav-item">
+            <button type="button" class="nav-link dropdown-trigger" aria-expanded="false" aria-haspopup="true"
+              id="homeDropdownBtn">
+              <span>Home</span>
+              <svg class="dropdown-chevron" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                  clip-rule="evenodd" />
+              </svg>
+            </button>
+            <div class="nav-dropdown" aria-labelledby="homeDropdownBtn">
+              <a href="index.html" class="dropdown-link">
+                <span>Home 1: Soil Biology</span>
+                <span class="dropdown-badge">Core</span>
+              </a>
+              <a href="home-2.html" class="dropdown-link">
+                <span>Home 2: Holistic Grazing</span>
+                <span class="dropdown-badge">Ecosystem</span>
+              </a>
+            </div>
+          </li>
+
+          <!-- 2. About -->
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+
+          <!-- 3. Services -->
+          <li class="nav-item">
+            <a href="services.html" class="nav-link">Services</a>
+          </li>
+
+          <!-- 4. Case Studies -->
+          <li class="nav-item">
+            <a href="case-studies.html" class="nav-link">Case Studies</a>
+          </li>
+
+          <!-- 5. Science / Soil Lab (Active Inner Page) -->
+          <li class="nav-item">
+            <a href="science.html" class="nav-link active">Science</a>
+          </li>
+
+          <!-- 6. Contact -->
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Desktop Action Controls [RTL/LTR, Dark Mode, CTA] -->
+      <div class="header-actions">
+
+        <!-- RTL/LTR Toggle -->
+        <button type="button" class="tool-btn rtl-toggle-btn" aria-label="Toggle text direction" title="Toggle RTL/LTR">
+          <span class="rtl-text">RTL</span>
+        </button>
+
+        <!-- Dark Mode Toggle (#000000 Strict) -->
+        <button type="button" class="tool-btn theme-toggle-btn" aria-label="Toggle dark mode"
+          title="Toggle Dark/Light Mode">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5" />
+            <path
+              d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+          </svg>
+        </button>
+
+        <!-- CTA Action Button -->
+        <a href="contact.html" class="btn-cta">
+          <span>Book Consultation</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button (Visible on tablet/mobile) -->
+        <button type="button" class="mobile-toggle-btn" aria-label="Open mobile navigation menu"
+          aria-controls="mobileDrawer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+  <!-- =======================================================================
+       MOBILE MENU DRAWER & ACCORDION
+       ======================================================================= -->
+  <div class="mobile-overlay" aria-hidden="true"></div>
+
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation Drawer">
+    <div class="drawer-header">
+      <div class="brand-link">
+        <img src="assets/images/logo/logo.png" alt="RegenAg Logo" class="brand-logo-img">
+        <div class="brand-info">
+          <span class="brand-title">Regenerative Agriculture</span>
+          <span class="brand-subtitle">Soil & Agroecology</span>
+        </div>
+      </div>
+      <button type="button" class="drawer-close-btn" aria-label="Close mobile menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation List -->
+    <nav class="drawer-nav" aria-label="Mobile Navigation">
+      <ul class="drawer-nav-list">
+
+        <!-- Accordion 1: Home Pages (Click only - closed by default) -->
+        <li class="drawer-nav-item mobile-item">
+          <button type="button" class="drawer-accordion-btn mobile-accordion-trigger" aria-expanded="false"
+            id="drawerHomeAccordion">
+            <span>Home</span>
+            <svg class="accordion-arrow dropdown-chevron" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+          <div class="drawer-submenu mobile-accordion">
+            <a href="index.html" class="drawer-sublink mobile-sub-link">Home 1: Soil Biology</a>
+            <a href="home-2.html" class="drawer-sublink mobile-sub-link">Home 2: Holistic Grazing</a>
+          </div>
+        </li>
+
+        <!-- Direct Links -->
+        <li class="drawer-nav-item">
+          <a href="about.html" class="drawer-link">About Us</a>
+        </li>
+        <li class="drawer-nav-item">
+          <a href="services.html" class="drawer-link">Services</a>
+        </li>
+        <li class="drawer-nav-item">
+          <a href="case-studies.html" class="drawer-link">Case Studies</a>
+        </li>
+        <li class="drawer-nav-item">
+          <a href="science.html" class="drawer-link active">Science Lab</a>
+        </li>
+        <li class="drawer-nav-item">
+          <a href="contact.html" class="drawer-link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Mobile Drawer Footer Tools -->
+    <div class="drawer-footer">
+      <div class="drawer-tools">
+        <button type="button" class="drawer-tool-item theme-toggle-btn" aria-label="Toggle dark mode">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <circle cx="12" cy="12" r="5" />
+            <path
+              d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+          </svg>
+          <span>Dark Mode</span>
+        </button>
+        <button type="button" class="drawer-tool-item rtl-toggle-btn" aria-label="Toggle text direction">
+          <span>RTL / LTR</span>
+        </button>
+      </div>
+
+      <a href="contact.html" class="btn-cta full-width"
+        style="justify-content: center; width: 100%; text-align: center;">
+        <span>Book Consultation</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M5 12h14M12 5l7 7-7 7" />
+        </svg>
+      </a>
+    </div>
+  </aside>
+
+  <!-- =======================================================================
+       MAIN CONTENT (EXACTLY 5 CONTENT SECTIONS FOR INNER PAGES)
+       ======================================================================= -->
+  <main id="main-content">
+
+    <!-- =====================================================================
+         SECTION 1: CYTOLOGICAL MICROSCOPY HERO (Background Image with Overlay)
+         ===================================================================== -->
+    <section class="inner-hero-section sci-hero-section" aria-labelledby="sciHeroTitle">
+      <img src="assets/images/sections/p44.jpg" alt="High power shadow contrast optical microscopy"
+        class="inner-hero-bg" width="1920" height="600" loading="eager">
+      <div class="inner-hero-overlay"></div>
+
+      <div class="inner-hero-container">
+        <div class="badge-tag">Soil Food Web Cytology &bull; 400x Shadow Contrast</div>
+        <h1 id="sciHeroTitle" class="inner-hero-title">
+          Empirical Soil Microbiology & <span class="hero-accent">Cytological Assays</span>
+        </h1>
+        <p class="inner-hero-lead">
+          Quantifying fungal hyphae diameters, bacterial biomass densities, and nematode morphology at 400x optical
+          magnification.
+        </p>
+
+        <div class="inner-hero-telemetry-bar">
+          <div class="inner-telemetry-card">
+            <span class="inner-telemetry-num">&gt; 350 µg/g</span>
+            <span class="inner-telemetry-label">Fungal Biomass</span>
+          </div>
+          <div class="inner-telemetry-card">
+            <span class="inner-telemetry-num">0.8 - 1.2:1</span>
+            <span class="inner-telemetry-label">F:B Biomass Ratio</span>
+          </div>
+          <div class="inner-telemetry-card">
+            <span class="inner-telemetry-num">&gt; 50 / g</span>
+            <span class="inner-telemetry-label">Aerobic Nematodes</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 2: SOIL FOOD WEB TROPHIC PYRAMID (4 Tiers)
+         ===================================================================== -->
+    <section class="sci-pyramid-section" aria-labelledby="pyramidTitle">
+      <div class="sci-pyramid-container">
+
+        <div class="section-header section-header-centered text-center">
+          <div class="badge-tag">Ecological Cycling</div>
+          <h2 id="pyramidTitle" class="section-title">Trophic Levels of Living Soil Systems</h2>
+          <p class="section-subtitle">
+            Biological mineralization occurs when secondary predators consume microbial bodies, delivering ionic
+            nutrients directly to roots.
+          </p>
+        </div>
+
+        <div class="pyramid-grid">
+
+          <div class="pyramid-card">
+            <div class="pyramid-thumb-wrap">
+              <img src="assets/images/sections/trophic-tier-1.jpg" alt="Primary Photosynthesizers" class="pyramid-thumb"
+                loading="lazy" width="600" height="450">
+            </div>
+            <div class="pyramid-body">
+              <span class="pyramid-tier-pill">TROPHIC TIER 1</span>
+              <h3 class="pyramid-title"> Photosynthesizers</h3>
+            </div>
+            <div class="pyramid-footer-stat">Carbon Inflow: Liquid </div>
+          </div>
+
+          <div class="pyramid-card">
+            <div class="pyramid-thumb-wrap">
+              <img src="assets/images/sections/trophic-tier-2.jpg" alt="Decomposers & Mutualists" class="pyramid-thumb"
+                loading="lazy" width="600" height="450">
+            </div>
+            <div class="pyramid-body">
+              <span class="pyramid-tier-pill">TROPHIC TIER 2</span>
+              <h3 class="pyramid-title">Decomposers </h3>
+            </div>
+            <div class="pyramid-footer-stat">Target: &gt; 300 µg/g Bacterial </div>
+          </div>
+
+          <div class="pyramid-card">
+            <div class="pyramid-thumb-wrap">
+              <img src="assets/images/sections/trophic-tier-3.jpg" alt="Micro-Predator Grazers" class="pyramid-thumb"
+                loading="lazy" width="600" height="450">
+            </div>
+            <div class="pyramid-body">
+              <span class="pyramid-tier-pill">TROPHIC TIER 3</span>
+              <h3 class="pyramid-title">Micro-Predator Grazers</h3>
+            </div>
+            <div class="pyramid-footer-stat">Index: &gt; 10,000 / Gram</div>
+          </div>
+
+          <div class="pyramid-card">
+            <div class="pyramid-thumb-wrap">
+              <img src="assets/images/sections/trophic-tier-4.jpg" alt="Higher Micro-Fauna" class="pyramid-thumb"
+                loading="lazy" width="600" height="450">
+            </div>
+            <div class="pyramid-body">
+              <span class="pyramid-tier-pill">TROPHIC TIER 4</span>
+              <h3 class="pyramid-title">Higher Micro-Fauna</h3>
+            </div>
+            <div class="pyramid-footer-stat">Balance : Aerobic Ratio&gt;95%</div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 3: NIR SPECTROSCOPY & DRY COMBUSTION (Split)
+         ===================================================================== -->
+    <section class="sci-spectro-section" aria-labelledby="spectroTitle">
+      <div class="sci-spectro-container">
+
+        <!-- Left: Diagnostic Specifications -->
+        <div class="sci-spectro-content">
+          <span class="badge-tag">Spectroscopic Verification</span>
+          <h2 id="spectroTitle" class="section-title">Near-Infrared (NIR) & Dry Combustion Analysis</h2>
+          <p class="section-subtitle">
+            Direct elemental carbon quantification combining 950°C Dumas combustion with spectral reflectance libraries.
+          </p>
+
+          <div class="sci-spectro-specs">
+            <div class="sci-spec-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-sprout)"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+                style="flex-shrink: 0; margin-top: 2px;">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span><strong>Dumas Combustion:</strong> Distinguishes organic carbon from inorganic carbonates with 99.4%
+                precision.</span>
+            </div>
+            <div class="sci-spec-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-sprout)"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+                style="flex-shrink: 0; margin-top: 2px;">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span><strong>Diffuse Reflectance (400-2500 nm):</strong> Identifies aromatic humic fractions and clay
+                complexes.</span>
+            </div>
+            <div class="sci-spec-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-sprout)"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"
+                style="flex-shrink: 0; margin-top: 2px;">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span><strong>Bulk Density Calibration:</strong> Converts core mass into metric tons of carbon sequestered
+                per hectare.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Spectrometer Visual -->
+        <div class="sci-spectro-visual">
+          <div class="sci-spectro-frame">
+            <img src="assets/images/sections/p45.jpg" alt="High precision spectroscopic sensor lab" width="600"
+              height="450" loading="lazy">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 4: NEXT-GEN GENOMICS MATRIX (Even 3 Cards)
+         ===================================================================== -->
+    <section class="sci-genomics-section" aria-labelledby="genomicsTitle">
+      <div class="sci-genomics-container">
+
+        <div class="section-header section-header-centered text-center">
+          <div class="badge-tag">Genomic Profiling</div>
+          <h2 id="genomicsTitle" class="section-title">Molecular Diagnostics & Deep Soil Stratification</h2>
+          <p class="section-subtitle">
+            Deploying DNA sequencing and stratified subsoil sampling to map complete functional microbiology.
+          </p>
+        </div>
+
+        <div class="genomics-grid">
+
+          <!-- Card 1: 16S & ITS DNA Sequencing -->
+          <article class="genomics-card">
+            <div class="genomics-thumb-wrap">
+              <img src="assets/images/sections/p46.jpg" alt="Metagenomic DNA sequencing analysis" class="genomics-thumb"
+                width="400" height="200" loading="lazy">
+            </div>
+            <div class="genomics-body">
+              <div>
+                <h3 class="genomics-title">16S & ITS Metagenomics</h3>
+                <p class="genomics-desc">
+                  Amplicon sequencing identifying bacterial families and mycorrhizal species native to regional soils.
+                </p>
+              </div>
+              <div class="genomics-footer">
+                <span>Functional Gene Mapping</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: 1-Meter Core Stratification -->
+          <article class="genomics-card">
+            <div class="genomics-thumb-wrap">
+              <img src="assets/images/sections/p47.jpg" alt="Deep subsoil core extraction probe" class="genomics-thumb"
+                width="400" height="200" loading="lazy">
+            </div>
+            <div class="genomics-body">
+              <div>
+                <h3 class="genomics-title">1-Meter Horizon Profiling</h3>
+                <p class="genomics-desc">
+                  Hydraulic coring measuring organic matter persistence across 0-30cm, 30-60cm, and 60-100cm horizons.
+                </p>
+              </div>
+              <div class="genomics-footer">
+                <span>Subsoil Persistence</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Dynamic Shadow Microscopy -->
+          <article class="genomics-card">
+            <div class="genomics-thumb-wrap">
+              <img src="assets/images/sections/p48.jpg" alt="Soil food web living biological community"
+                class="genomics-thumb" width="400" height="200" loading="lazy">
+            </div>
+            <div class="genomics-body">
+              <div>
+                <h3 class="genomics-title">Live Shadow Microscopy</h3>
+                <p class="genomics-desc">
+                  Direct counting measuring organism motility, flagellate swimming, and fungal strand diameter.
+                </p>
+              </div>
+              <div class="genomics-footer">
+                <span>Direct Visual Proof</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 5: RESEARCH LAB ENGAGEMENT BANNER (Action CTA)
+         ===================================================================== -->
+    <section class="sci-cta-section" aria-labelledby="sciCtaTitle">
+      <div class="sci-cta-container">
+
+        <div class="sci-cta-card">
+          <img src="assets/images/sections/p49.jpg" alt="Regenerative agronomic science research facility"
+            class="sci-cta-bg" width="1180" height="380" loading="lazy">
+          <div class="sci-cta-overlay"></div>
+
+          <div class="sci-cta-inner">
+            <span class="badge-tag"
+              style="background: rgba(8, 28, 21, 0.75); color: #FFFFFF; border-color: rgba(82, 183, 136, 0.55);">Empirical
+              Lab Certification</span>
+            <h2 id="sciCtaTitle" class="section-title" style="color: #FFFFFF;">Commission a Full Cytological Soil Audit
+            </h2>
+            <p class="section-subtitle" style="color: #D8F3DC; max-width: 620px;">
+              Receive optical microscopy assays, functional biological indices, and tailored transition blueprints.
+            </p>
+            <div class="hero-actions" style="justify-content: center; margin-top: 0.5rem;">
+              <a href="contact.html" class="btn-cta">
+                <span>Order Specimen Collection Kit</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <a href="case-studies.html" class="btn-secondary">
+                <span>View Field Case Studies</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =======================================================================
+       SHARED GLOBAL FOOTER
+       ======================================================================= -->
+  <footer class="site-footer" id="site-footer">
+    <div class="footer-top">
+
+      <!-- 1. Brand Manifesto -->
+      <div class="footer-brand">
+        <div class="footer-brand-header">
+          <img src="assets/images/logo/logo.png" alt="Regenerative Agriculture Consulting Firm Emblem"
+            class="footer-logo-img">
+          <div class="footer-brand-text">
+            <div class="footer-brand-title">Regenerative Agriculture</div>
+            <div class="footer-brand-sub">Consulting Firm</div>
+          </div>
+        </div>
+        <p class="footer-bio">
+          Restoring living soil biomes, optimizing holistic grazing, and verifying soil carbon.
+        </p>
+        <div class="footer-accreditations">
+          <span class="badge-tag">ISO 17025 Tested</span>
+          <span class="badge-tag">Certified Agroecologists</span>
+          <span class="badge-tag">Soil Food Web Protocol</span>
+        </div>
+        <div class="footer-socials">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-link"
+            aria-label="LinkedIn">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer-social-link"
+            aria-label="X (Twitter)">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+              <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+            </svg>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-link"
+            aria-label="YouTube">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path
+                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
+              <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+            </svg>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-link"
+            aria-label="Instagram">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- 3. Scientific Hub -->
+      <div class="footer-col">
+        <h2 class="footer-col-title">Firm</h2>
+        <ul class="footer-nav-list">
+          <li><a href="about.html" class="footer-link">Scientific Team</a></li>
+          <li><a href="case-studies.html" class="footer-link">Field Case Studies</a></li>
+          <li><a href="science.html" class="footer-link">Microscopy Methodology</a></li>
+          <li><a href="about.html" class="footer-link">Soil Organic Matter (SOM)</a></li>
+          <li><a href="contact.html" class="footer-link">Lab Specimen Dispatch</a></li>
+        </ul>
+      </div>
+
+      <!-- 4. Quick Links -->
+      <div class="footer-col">
+        <h2 class="footer-col-title">Navigation</h2>
+        <ul class="footer-nav-list">
+          <li><a href="index.html" class="footer-link">Home 1: Soil Biology</a></li>
+          <li><a href="home-2.html" class="footer-link">Home 2: Holistic Grazing</a></li>
+          <li><a href="about.html" class="footer-link">About Us</a></li>
+          <li><a href="case-studies.html" class="footer-link">Field Trials</a></li>
+          <li><a href="contact.html" class="footer-link">Contact Lab</a></li>
+        </ul>
+      </div>
+
+      <!-- 5. Field Bulletin / Newsletter -->
+      <div class="footer-newsletter">
+        <h2 class="footer-col-title">Agronomic Bulletin</h2>
+        <p class="footer-dispatch-desc">
+          Receive peer-reviewed soil microbiology benchmarks and seasonal regenerative management field protocols.
+        </p>
+        <form class="footer-newsletter-form"
+          onsubmit="event.preventDefault(); alert('Subscribed to Agronomic Bulletin!');">
+          <div class="dispatch-input-wrap">
+            <input type="email" placeholder="agronomist@farm.com" required class="dispatch-input"
+              aria-label="Work email address">
+          </div>
+          <button type="submit" class="dispatch-btn">Subscribe to Field Data</button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom Strip -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <p>&copy; 2026 Regenerative Agriculture Consulting Firm. All rights reserved. Peer-reviewed regenerative
+          science.</p>
+        <ul class="footer-meta-links">
+          <li><a href="#" class="footer-link">Privacy Policy</a></li>
+          <li><a href="#" class="footer-link">Scientific Terms</a></li>
+          <li><a href="#" class="footer-link">Laboratory Certifications</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =======================================================================
+       SCROLL TO TOP BUTTON
+       ======================================================================= -->
+  <button type="button" id="scroll-to-top" aria-label="Scroll to top of page">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+      stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- External JavaScript Only -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

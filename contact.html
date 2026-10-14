@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Agronomy Lab & Advisory | Regenerative Agriculture Consulting Firm</title>
+  <meta name="description"
+    content="Direct contact channels for biological soil testing intake, holistic grazing consultations, on-farm regenerative audits, and regional diagnostic hubs.">
+
+  <!-- Favicon using official brand logo -->
+  <link rel="icon" type="image/png" href="assets/images/logo/logo.png">
+
+  <!-- Core Design System & Responsive Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css?v=2.3">
+  <link rel="stylesheet" href="assets/css/responsive.css?v=2.3">
+</head>
+
+<body>
+
+  <!-- =======================================================================
+       BRANDED PRELOADER
+       ======================================================================= -->
+  <div id="preloader" aria-hidden="true">
+    <div class="loader-emblem">
+      <img src="assets/images/logo/logo.png" alt="RegenAg Logo Loader" class="loader-logo-img">
+      <div class="loader-ring"></div>
+    </div>
+    <div class="loader-bar-wrap">
+      <div class="loader-bar"></div>
+    </div>
+    <span class="loader-text">Loading Diagnostic Dispatch Desk</span>
+  </div>
+
+  <!-- =======================================================================
+       FIXED COMPACT HEADER (Single line desktop, fixed top)
+       ======================================================================= -->
+  <header class="site-header" id="site-header">
+    <div class="header-container">
+
+      <!-- Brand Identity [Logo + Brand Name + Subtitle] -->
+      <a href="index.html" class="brand-link" aria-label="Regenerative Agriculture Consulting Firm Home">
+        <img src="assets/images/logo/logo.png" alt="Regenerative Agriculture Consulting Firm Emblem"
+          class="brand-logo-img">
+        <div class="brand-info">
+          <span class="brand-title">Regenerative Agriculture</span>
+          <span class="brand-subtitle">Consulting Firm</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation (Exactly 6 Nav Items on One Line) -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+
+          <!-- 1. Home (Click-Only Dropdown: Home 1, Home 2) -->
+          <li class="nav-item">
+            <button type="button" class="nav-link dropdown-trigger" aria-expanded="false" aria-haspopup="true"
+              id="homeDropdownBtn">
+              <span>Home</span>
+              <svg class="dropdown-chevron" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                  clip-rule="evenodd" />
+              </svg>
+            </button>
+            <div class="nav-dropdown" aria-labelledby="homeDropdownBtn">
+              <a href="index.html" class="dropdown-link">
+                <span>Home 1: Soil Biology</span>
+                <span class="dropdown-badge">Core</span>
+              </a>
+              <a href="home-2.html" class="dropdown-link">
+                <span>Home 2: Holistic Grazing</span>
+                <span class="dropdown-badge">Ecosystem</span>
+              </a>
+            </div>
+          </li>
+
+          <!-- 2. About -->
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+
+          <!-- 3. Services -->
+          <li class="nav-item">
+            <a href="services.html" class="nav-link">Services</a>
+          </li>
+
+          <!-- 4. Case Studies -->
+          <li class="nav-item">
+            <a href="case-studies.html" class="nav-link">Case Studies</a>
+          </li>
+
+          <!-- 5. Science / Soil Lab -->
+          <li class="nav-item">
+            <a href="science.html" class="nav-link">Science</a>
+          </li>
+
+          <!-- 6. Contact (Active Inner Page) -->
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link active">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Desktop Action Controls [RTL/LTR, Dark Mode, CTA] -->
+      <div class="header-actions">
+
+        <!-- RTL/LTR Toggle -->
+        <button type="button" class="tool-btn rtl-toggle-btn" aria-label="Toggle text direction" title="Toggle RTL/LTR">
+          <span class="rtl-text">RTL</span>
+        </button>
+
+        <!-- Dark Mode Toggle (#000000 Strict) -->
+        <button type="button" class="tool-btn theme-toggle-btn" aria-label="Toggle dark mode"
+          title="Toggle Dark/Light Mode">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5" />
+            <path
+              d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+          </svg>
+        </button>
+
+        <!-- CTA Action Button -->
+        <a href="contact.html" class="btn-cta">
+          <span>Book Consultation</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button (Visible on tablet/mobile) -->
+        <button type="button" class="mobile-toggle-btn" aria-label="Open mobile navigation menu"
+          aria-controls="mobileDrawer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+            stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+
+      </div>
+
+    </div>
+  </header>
+
+  <!-- =======================================================================
+       MOBILE MENU DRAWER & ACCORDION
+       ======================================================================= -->
+  <div class="mobile-overlay" aria-hidden="true"></div>
+
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation Drawer">
+    <div class="drawer-header">
+      <div class="brand-link">
+        <img src="assets/images/logo/logo.png" alt="RegenAg Logo" class="brand-logo-img">
+        <div class="brand-info">
+          <span class="brand-title">Regenerative Agriculture</span>
+          <span class="brand-subtitle">Soil & Agroecology</span>
+        </div>
+      </div>
+      <button type="button" class="drawer-close-btn" aria-label="Close mobile menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation List -->
+    <nav class="drawer-nav" aria-label="Mobile Navigation">
+      <ul class="drawer-nav-list">
+
+        <!-- Accordion 1: Home Pages (Click only - closed by default) -->
+        <li class="drawer-nav-item mobile-item">
+          <button type="button" class="drawer-accordion-btn mobile-accordion-trigger" aria-expanded="false"
+            id="drawerHomeAccordion">
+            <span>Home</span>
+            <svg class="accordion-arrow dropdown-chevron" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+          <div class="drawer-submenu mobile-accordion">
+            <a href="index.html" class="drawer-sublink mobile-sub-link">Home 1: Soil Biology</a>
+            <a href="home-2.html" class="drawer-sublink mobile-sub-link">Home 2: Holistic Grazing</a>
+          </div>
+        </li>
+
+        <!-- Direct Links -->
+        <li class="drawer-nav-item">
+          <a href="about.html" class="drawer-link">About Us</a>
+        </li>
+        <li class="drawer-nav-item">
+          <a href="services.html" class="drawer-link">Services</a>
+        </li>
+        <li class="drawer-nav-item">
+          <a href="case-studies.html" class="drawer-link">Case Studies</a>
+        </li>
+        <li class="drawer-nav-item">
+          <a href="science.html" class="drawer-link">Science Lab</a>
+        </li>
+        <li class="drawer-nav-item">
+          <a href="contact.html" class="drawer-link active">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Mobile Drawer Footer Tools -->
+    <div class="drawer-footer">
+      <div class="drawer-tools">
+        <button type="button" class="drawer-tool-item theme-toggle-btn" aria-label="Toggle dark mode">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            aria-hidden="true">
+            <circle cx="12" cy="12" r="5" />
+            <path
+              d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+          </svg>
+          <span>Dark Mode</span>
+        </button>
+        <button type="button" class="drawer-tool-item rtl-toggle-btn" aria-label="Toggle text direction">
+          <span>RTL / LTR</span>
+        </button>
+      </div>
+
+      <a href="contact.html" class="btn-cta full-width"
+        style="justify-content: center; width: 100%; text-align: center;">
+        <span>Book Consultation</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M5 12h14M12 5l7 7-7 7" />
+        </svg>
+      </a>
+    </div>
+  </aside>
+
+  <!-- =======================================================================
+       MAIN CONTENT (EXACTLY 5 CONTENT SECTIONS FOR INNER PAGES)
+       ======================================================================= -->
+  <main id="main-content">
+
+    <!-- =====================================================================
+         SECTION 1: SPECIMEN LAB INTAKE HERO (Background Image with Overlay)
+         ===================================================================== -->
+    <section class="inner-hero-section contact-hero-section" aria-labelledby="contactHeroTitle">
+      <img src="assets/images/sections/p50.jpg" alt="Regenerative soil science laboratory workstation"
+        class="inner-hero-bg" width="1920" height="600" loading="eager">
+      <div class="inner-hero-overlay"></div>
+
+      <div class="inner-hero-container">
+        <div class="badge-tag">Soil Diagnostics &bull; Live Specimen Intake Desk</div>
+        <h1 id="contactHeroTitle" class="inner-hero-title">
+          Engage Soil Biologists & <span class="hero-accent">Rangeland Advisors</span>
+        </h1>
+        <p class="inner-hero-lead">
+          Direct channels for specimen dispatch, biological farm audits, and pasture transitions.
+        </p>
+
+        <div class="inner-hero-telemetry-bar">
+          <a href="tel:+18004927645" class="inner-telemetry-card">
+            <span class="inner-telemetry-num">+1 (800) 492-SOIL</span>
+            <span class="inner-telemetry-label">Direct Hotline</span>
+          </a>
+          <a href="mailto:intake@regenagconsulting.com" class="inner-telemetry-card">
+            <span class="inner-telemetry-num">intake@regenag.com</span>
+            <span class="inner-telemetry-label">Specimen Intake</span>
+          </a>
+          <div class="inner-telemetry-card">
+            <span class="inner-telemetry-num">Des Moines, IA Hub</span>
+            <span class="inner-telemetry-label">Diagnostic Hub</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 2: ENQUIRY STUDIO & INTAKE FORM (Split Layout)
+         ===================================================================== -->
+    <section class="contact-studio-section" aria-labelledby="intakeFormTitle">
+      <div class="contact-studio-container">
+
+        <!-- Left: Consultation Workflow & Field Survey Photo -->
+        <div class="contact-onboarding-sidebar">
+          <div class="contact-survey-frame">
+            <img src="assets/images/sections/contact-field-survey.jpg" alt="Agronomist field diagnostic survey"
+              width="500" height="280" loading="lazy">
+          </div>
+
+          <div class="onboarding-step-list">
+
+            <div class="onboarding-step-item">
+              <span class="onboarding-step-idx">01</span>
+              <div>
+                <div class="onboarding-step-text-title">Diagnostic Intake</div>
+                <div class="onboarding-step-text-desc">Submit acreage, rotation history, and target soil goals.</div>
+              </div>
+            </div>
+
+            <div class="onboarding-step-item">
+              <span class="onboarding-step-idx">02</span>
+              <div>
+                <div class="onboarding-step-text-title">Core Kit or Farm Audit</div>
+                <div class="onboarding-step-text-desc">Receive specimen core kits or book an on-site field survey.</div>
+              </div>
+            </div>
+
+            <div class="onboarding-step-item">
+              <span class="onboarding-step-idx">03</span>
+              <div>
+                <div class="onboarding-step-text-title">Agronomic Roadmap</div>
+                <div class="onboarding-step-text-desc">Review F:B ratios, biological prescriptions, and paddock plans.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right: Comprehensive Consultation Form -->
+        <div class="contact-form-card">
+          <div class="form-header">
+            <span class="badge-tag">Verified Advisory</span>
+            <h2 id="intakeFormTitle"
+              style="font-size: 1.6rem; font-weight: 800; color: var(--text-main); margin-top: 0.35rem;">Consultation &
+              Specimen Request</h2>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 0.25rem;">Senior soil scientists reply
+              within 24 business hours.</p>
+          </div>
+
+          <form class="contact-form"
+            onsubmit="event.preventDefault(); alert('Thank you! Your regenerative agronomic consultation request has been received. Our senior soil scientist will contact you within 24 hours.');">
+
+            <div class="contact-form-grid">
+
+              <div class="form-group">
+                <label for="fullName" class="form-label">Full Name *</label>
+                <input type="text" id="fullName" class="form-input" placeholder="e.g. Dr. Thomas Vance" required>
+              </div>
+
+              <div class="form-group">
+                <label for="emailAddr" class="form-label">Business Email *</label>
+                <input type="email" id="emailAddr" class="form-input" placeholder="agronomist@farm.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="phoneNumber" class="form-label">Phone Number *</label>
+                <input type="tel" id="phoneNumber" class="form-input" placeholder="+1 (555) 019-2834" required>
+              </div>
+
+              <div class="form-group">
+                <label for="operationType" class="form-label">Operation Type *</label>
+                <select id="operationType" class="form-select" required>
+                  <option value="" disabled selected>Select Enterprise Focus</option>
+                  <option value="broadacre">Broadacre Grain & Oilseed</option>
+                  <option value="ranch">Rangeland & Cattle Grazing (AMP)</option>
+                  <option value="horticulture">Vineyard & Tree Fruit Orchard</option>
+                  <option value="silvopasture">Agroforestry & Silvopasture</option>
+                  <option value="dairy">Dairy & Intensive Pasture</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="acreageSize" class="form-label">Managed Acreage *</label>
+                <select id="acreageSize" class="form-select" required>
+                  <option value="" disabled selected>Select Total Acreage</option>
+                  <option value="under500">Under 500 Acres</option>
+                  <option value="500to2500">500 - 2,500 Acres</option>
+                  <option value="2500to10000">2,500 - 10,000 Acres</option>
+                  <option value="over10000">10,000+ Acres</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="primaryGoal" class="form-label">Primary Objective *</label>
+                <select id="primaryGoal" class="form-select" required>
+                  <option value="" disabled selected>Select Diagnostic Goal</option>
+                  <option value="biology">Complete Soil Biology & Microscopy</option>
+                  <option value="grazing">Holistic Rotational Grazing Design</option>
+                  <option value="inputs">Synthetic Nitrogen & Chemical Reduction</option>
+                  <option value="carbon">Soil Carbon Baseline & MRV Registry</option>
+                </select>
+              </div>
+
+            </div>
+
+            <div class="form-group" style="margin-top: 1.25rem;">
+              <label for="fieldNotes" class="form-label">Field Details & Soil Challenges</label>
+              <textarea id="fieldNotes" class="form-textarea"
+                placeholder="Describe current crop rotations, soil compaction depth, tillage history, or livestock stocking densities..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-cta contact-form-submit-btn">
+              <span>Submit Agronomic Inquiry</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </button>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 3: REGIONAL DIAGNOSTIC HUBS (Even 3 Cards)
+         ===================================================================== -->
+    <section class="contact-hubs-section" aria-labelledby="hubsTitle">
+      <div class="contact-hubs-container">
+
+        <div class="section-header section-header-centered text-center">
+          <div class="badge-tag">Field Presence</div>
+          <h2 id="hubsTitle" class="section-title">Regional Diagnostic Science Hubs</h2>
+          <p class="section-subtitle">
+            Regional laboratories providing cold-chain specimen intake and localized field support.
+          </p>
+        </div>
+
+        <div class="hubs-grid">
+
+          <!-- Hub 1: Midwest Hub -->
+          <article class="hub-card">
+            <div class="hub-thumb-wrap">
+              <img src="assets/images/sections/p51.jpg" alt="Midwest Agronomy Diagnostic Center" class="hub-thumb"
+                width="400" height="180" loading="lazy">
+            </div>
+            <div class="hub-body">
+              <div>
+                <span class="hub-region-tag">Midwest Corn & Grain Belt</span>
+                <h3 class="hub-title">Des Moines Agronomic Hub</h3>
+              </div>
+              <div class="hub-meta-grid">
+                <div class="hub-meta-col">
+                  <span class="hub-meta-label">Facility Location</span>
+                  <p class="hub-meta-address">
+                    742 Agronomy Parkway, Suite 400<br>
+                    Des Moines, IA 50309
+                  </p>
+                </div>
+                <div class="hub-meta-col">
+                  <span class="hub-meta-label">Intake & Contact</span>
+                  <div class="hub-contact-info">
+                    <a href="tel:+15153487710" class="hub-phone-link">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path
+                          d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                      </svg>
+                      +1 (515) 348-7710
+                    </a>
+                    <span class="hub-intake-badge">24/7 Cold-Chain </span>
+                  </div>
+                </div>
+              </div>
+              <div class="hub-footer">
+                <span>Specialization: Deep Mollisols & Cover Crops</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </div>
+            </div>
+          </article>
+
+          <!-- Hub 2: Pacific Coast Hub -->
+          <article class="hub-card">
+            <div class="hub-thumb-wrap">
+              <img src="assets/images/sections/p52.jpg" alt="Pacific Coast Agronomy Center" class="hub-thumb"
+                width="400" height="180" loading="lazy">
+            </div>
+            <div class="hub-body">
+              <div>
+                <span class="hub-region-tag">Pacific & Mediterranean Climate</span>
+                <h3 class="hub-title">Santa Rosa Bio-Lab</h3>
+              </div>
+              <div class="hub-meta-grid">
+                <div class="hub-meta-col">
+                  <span class="hub-meta-label">Facility Location</span>
+                  <p class="hub-meta-address">
+                    1280 Vineyard Ridge Way, Bldg B<br>
+                    Santa Rosa, CA 95403
+                  </p>
+                </div>
+                <div class="hub-meta-col">
+                  <span class="hub-meta-label">Intake & Contact</span>
+                  <div class="hub-contact-info">
+                    <a href="tel:+17078294420" class="hub-phone-link">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path
+                          d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                      </svg>
+                      +1 (707) 829-4420
+                    </a>
+                    <span class="hub-intake-badge">Biological Lab</span>
+                  </div>
+                </div>
+              </div>
+              <div class="hub-footer">
+                <span>Specialization: Orchard & Vineyard Terroir</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </div>
+            </div>
+          </article>
+
+          <!-- Hub 3: Southern Plains Hub -->
+          <article class="hub-card">
+            <div class="hub-thumb-wrap">
+              <img src="assets/images/sections/p53.jpg" alt="Southern Plains Rangeland Center" class="hub-thumb"
+                width="400" height="180" loading="lazy">
+            </div>
+            <div class="hub-body">
+              <div>
+                <span class="hub-region-tag">Arid & Semi-Arid Rangeland</span>
+                <h3 class="hub-title">San Angelo Grazing Hub</h3>
+              </div>
+              <div class="hub-meta-grid">
+                <div class="hub-meta-col">
+                  <span class="hub-meta-label">Facility Location</span>
+                  <p class="hub-meta-address">
+                    3100 Range Science Drive<br>
+                    San Angelo, TX 76904
+                  </p>
+                </div>
+                <div class="hub-meta-col">
+                  <span class="hub-meta-label">Intake & Contact</span>
+                  <div class="hub-contact-info">
+                    <a href="tel:+13256582900" class="hub-phone-link">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path
+                          d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                      </svg>
+                      +1 (325) 658-2900
+                    </a>
+                    <span class="hub-intake-badge">Rangeland </span>
+                  </div>
+                </div>
+              </div>
+              <div class="hub-footer">
+                <span>Specialization: High-Density AMP Grazing</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 4: SPECIMEN EXTRACTION GUIDELINES (4-Step Bar)
+         ===================================================================== -->
+    <section class="contact-guidelines-section" aria-labelledby="guidelinesTitle">
+      <div class="contact-guidelines-container">
+
+        <div class="section-header section-header-centered text-center">
+          <div class="badge-tag">Sample Preparation</div>
+          <h2 id="guidelinesTitle" class="section-title">Specimen Dispatch Protocol</h2>
+          <p class="section-subtitle">
+            Standardized cold-chain core sampling protocols to preserve live microbial biomes.
+          </p>
+        </div>
+
+        <div class="guidelines-grid">
+
+          <div class="guideline-card">
+            <span class="guideline-step-pill">STEP 01</span>
+            <h3 class="guideline-title">Core Stratification</h3>
+            <p class="guideline-desc">
+              Extract 0-15cm topsoil and 15-30cm subsoil layers using GPS-tagged stainless probes.
+            </p>
+            <div class="guideline-tag">Standard: 15 Cores</div>
+          </div>
+
+          <div class="guideline-card">
+            <span class="guideline-step-pill">STEP 02</span>
+            <h3 class="guideline-title">Moisture Management</h3>
+            <p class="guideline-desc">
+              Store crumb aggregates in microporous bags to keep fungal hyphae intact.
+            </p>
+            <div class="guideline-tag">Preserve: Aggregate </div>
+          </div>
+
+          <div class="guideline-card">
+            <span class="guideline-step-pill">STEP 03</span>
+            <h3 class="guideline-title">Cold-Chain Packaging</h3>
+            <p class="guideline-desc">
+              Pack with insulated gel packs to stabilize microbial respiration during transit.
+            </p>
+            <div class="guideline-tag">Transit: 48 Hours</div>
+          </div>
+
+          <div class="guideline-card">
+            <span class="guideline-step-pill">STEP 04</span>
+            <h3 class="guideline-title">Laboratory Ingestion</h3>
+            <p class="guideline-desc">
+              Specimens undergo direct optical microscopy and spectroscopic carbon assays upon receipt.
+            </p>
+            <div class="guideline-tag">Turnaround: 5-7 Days</div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 5: HOTLINE ACTION BANNER (Final Punchy CTA)
+         ===================================================================== -->
+    <section class="contact-hotline-section" aria-labelledby="hotlineCtaTitle">
+      <div class="contact-hotline-container">
+
+        <div class="contact-hotline-card">
+          <img src="assets/images/sections/contact-cta-field.jpg" alt="Agronomists evaluating restored soil"
+            class="contact-hotline-bg" width="1180" height="380" loading="lazy">
+          <div class="contact-hotline-overlay"></div>
+
+          <div class="contact-hotline-inner">
+            <div class="badge-tag">Rapid Agronomic Advisory</div>
+            <h2 id="hotlineCtaTitle" class="section-title" style="color: #FFFFFF;">Require Immediate On-Site Field
+              Consultation?</h2>
+            <p class="section-subtitle" style="color: #D8F3DC; max-width: 620px;">
+              Licensed agronomists and grazing specialists ready for immediate deployment.
+            </p>
+            <div class="hero-actions" style="justify-content: center; margin-top: 0.5rem;">
+              <a href="tel:+18004927645" class="btn-cta">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg>
+                <span>Call Hotline: +1 (800) 492-SOIL</span>
+              </a>
+              <a href="#intakeFormTitle" class="btn-secondary">
+                <span>Complete Digital Intake</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =======================================================================
+       SHARED GLOBAL FOOTER
+       ======================================================================= -->
+  <footer class="site-footer" id="site-footer">
+    <div class="footer-top">
+
+      <!-- 1. Brand Manifesto -->
+      <div class="footer-brand">
+        <div class="footer-brand-header">
+          <img src="assets/images/logo/logo.png" alt="Regenerative Agriculture Consulting Firm Emblem"
+            class="footer-logo-img">
+          <div class="footer-brand-text">
+            <div class="footer-brand-title">Regenerative Agriculture</div>
+            <div class="footer-brand-sub">Consulting Firm</div>
+          </div>
+        </div>
+        <p class="footer-bio">
+          Restoring living soil biomes, optimizing holistic grazing, and verifying soil carbon.
+        </p>
+        <div class="footer-accreditations">
+          <span class="badge-tag">ISO 17025 Tested</span>
+          <span class="badge-tag">Certified Agroecologists</span>
+          <span class="badge-tag">Soil Food Web Protocol</span>
+        </div>
+        <div class="footer-socials">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-link"
+            aria-label="LinkedIn">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer-social-link"
+            aria-label="X (Twitter)">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+              <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+            </svg>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-link"
+            aria-label="YouTube">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path
+                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
+              <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+            </svg>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-link"
+            aria-label="Instagram">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- 3. Scientific Hub -->
+      <div class="footer-col">
+        <h2 class="footer-col-title">Firm</h2>
+        <ul class="footer-nav-list">
+          <li><a href="about.html" class="footer-link">Scientific Team</a></li>
+          <li><a href="case-studies.html" class="footer-link">Field Case Studies</a></li>
+          <li><a href="science.html" class="footer-link">Microscopy Methodology</a></li>
+          <li><a href="about.html" class="footer-link">Soil Organic Matter (SOM)</a></li>
+          <li><a href="contact.html" class="footer-link">Lab Specimen Dispatch</a></li>
+        </ul>
+      </div>
+
+      <!-- 4. Quick Links -->
+      <div class="footer-col">
+        <h2 class="footer-col-title">Navigation</h2>
+        <ul class="footer-nav-list">
+          <li><a href="index.html" class="footer-link">Home 1: Soil Biology</a></li>
+          <li><a href="home-2.html" class="footer-link">Home 2: Holistic Grazing</a></li>
+          <li><a href="about.html" class="footer-link">About Us</a></li>
+          <li><a href="case-studies.html" class="footer-link">Field Trials</a></li>
+          <li><a href="contact.html" class="footer-link">Contact Lab</a></li>
+        </ul>
+      </div>
+
+      <!-- 5. Field Bulletin / Newsletter -->
+      <div class="footer-newsletter">
+        <h2 class="footer-col-title">Agronomic Bulletin</h2>
+        <p class="footer-dispatch-desc">
+          Receive peer-reviewed soil microbiology benchmarks and seasonal regenerative management field protocols.
+        </p>
+        <form class="footer-newsletter-form"
+          onsubmit="event.preventDefault(); alert('Subscribed to Agronomic Bulletin!');">
+          <div class="dispatch-input-wrap">
+            <input type="email" placeholder="agronomist@farm.com" required class="dispatch-input"
+              aria-label="Work email address">
+          </div>
+          <button type="submit" class="dispatch-btn">Subscribe to Field Data</button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom Strip -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <p>&copy; 2026 Regenerative Agriculture Consulting Firm. All rights reserved. Peer-reviewed regenerative
+          science.</p>
+        <ul class="footer-meta-links">
+          <li><a href="#" class="footer-link">Privacy Policy</a></li>
+          <li><a href="#" class="footer-link">Scientific Terms</a></li>
+          <li><a href="#" class="footer-link">Laboratory Certifications</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =======================================================================
+       SCROLL TO TOP BUTTON
+       ======================================================================= -->
+  <button type="button" id="scroll-to-top" aria-label="Scroll to top of page">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+      stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- External JavaScript Only -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
