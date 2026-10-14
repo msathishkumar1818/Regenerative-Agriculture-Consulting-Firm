@@ -62,6 +62,27 @@
 
 /* Tablet / Medium Screens (Max 1024px) */
 @media (max-width: 1024px) {
+  .h1-hero-section,
+  .h2-hero-section {
+    min-height: calc(100vh - var(--header-height)) !important;
+    min-height: calc(100dvh - var(--header-height)) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 3rem 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .inner-hero-section {
+    height: 500px !important;
+    min-height: 500px !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+  }
+
   .h1-hero-container {
     grid-template-columns: 1fr;
     gap: 2.5rem;
@@ -254,8 +275,15 @@
     --header-height: 62px;
   }
 
-  .h1-hero-section {
-    padding: 3rem 0 2.5rem;
+  .h1-hero-section,
+  .h2-hero-section {
+    min-height: calc(100vh - var(--header-height)) !important;
+    min-height: calc(100dvh - var(--header-height)) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 2.5rem 0 !important;
+    box-sizing: border-box !important;
   }
 
   .hero-heading {
@@ -739,8 +767,13 @@
 
   /* Unified Inner Hero 768px Rules */
   .inner-hero-section {
-    min-height: 440px;
-    padding: 3.5rem 0 3rem;
+    height: 480px !important;
+    min-height: 480px !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
   }
 
   .inner-hero-telemetry-bar {
@@ -816,6 +849,27 @@
   :root {
     --header-height: 58px;
     --container-padding: 1rem;
+  }
+
+  .h1-hero-section,
+  .h2-hero-section {
+    min-height: calc(100vh - var(--header-height)) !important;
+    min-height: calc(100dvh - var(--header-height)) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 2rem 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .inner-hero-section {
+    height: 460px !important;
+    min-height: 460px !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
   }
 
   .inner-hero-title {
@@ -1240,7 +1294,23 @@
   }
 
   .mobile-drawer {
-    width: 280px;
+    width: 310px;
+    max-width: 88vw;
+    padding: 1.15rem 0.85rem;
+  }
+
+  .drawer-header {
+    gap: 1rem !important;
+  }
+
+  .drawer-close-btn {
+    margin-left: auto !important;
+    flex-shrink: 0 !important;
+  }
+
+  html[dir="rtl"] .drawer-close-btn {
+    margin-left: 0 !important;
+    margin-right: auto !important;
   }
 
   .drawer-tools {
@@ -1502,6 +1572,66 @@
 @media (max-width: 360px) {
   :root {
     --container-padding: 0.75rem;
+  }
+
+  .h1-hero-section,
+  .h2-hero-section {
+    min-height: calc(100vh - var(--header-height)) !important;
+    min-height: calc(100dvh - var(--header-height)) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 1.75rem 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .inner-hero-section {
+    height: 440px !important;
+    min-height: 440px !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+  }
+
+  .mobile-drawer {
+    width: 295px;
+    max-width: 90vw;
+    padding: 1rem 0.75rem;
+  }
+
+  .drawer-header {
+    gap: 0.75rem !important;
+  }
+
+  .drawer-header .brand-logo-img {
+    width: 32px !important;
+    height: 32px !important;
+    min-width: 32px !important;
+    min-height: 32px !important;
+  }
+
+  .drawer-header .brand-title {
+    font-size: 0.82rem !important;
+  }
+
+  .drawer-header .brand-subtitle {
+    font-size: 0.58rem !important;
+  }
+
+  .drawer-close-btn {
+    width: 34px !important;
+    height: 34px !important;
+    min-width: 34px !important;
+    min-height: 34px !important;
+    margin-left: auto !important;
+    flex-shrink: 0 !important;
+  }
+
+  html[dir="rtl"] .drawer-close-btn {
+    margin-left: 0 !important;
+    margin-right: auto !important;
   }
 
   .inner-hero-telemetry-bar {

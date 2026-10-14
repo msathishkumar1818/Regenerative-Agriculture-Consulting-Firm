@@ -694,15 +694,15 @@ html.dark .tool-btn:hover {
   position: fixed;
   top: 0;
   bottom: 0;
-  right: -320px;
-  width: 300px;
-  max-width: 85vw;
+  right: -340px;
+  width: 320px;
+  max-width: 88vw;
   background-color: var(--bg-surface);
   border-left: 1px solid var(--border-color);
   z-index: 1060;
   display: flex;
   flex-direction: column;
-  padding: 1.25rem;
+  padding: 1.25rem 1rem;
   overflow-y: auto;
   transition: transform var(--transition-smooth);
 }
@@ -713,7 +713,7 @@ html.dark .mobile-drawer {
 }
 
 .mobile-drawer.open {
-  transform: translateX(-320px);
+  transform: translateX(-340px);
 }
 
 /* Mobile Drawer Header */
@@ -721,24 +721,94 @@ html.dark .mobile-drawer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1.25rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid var(--border-color);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.drawer-header .brand-link {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  min-width: 0;
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+
+.drawer-header .brand-logo-img {
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  min-height: 36px;
+  flex-shrink: 0;
+}
+
+.drawer-header .brand-info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  flex: 1 1 auto;
+  gap: 0.15rem;
+  overflow: hidden;
+}
+
+.drawer-header .brand-title {
+  font-family: var(--font-heading);
+  font-size: 0.88rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: var(--text-main);
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.drawer-header .brand-subtitle {
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-sprout);
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .drawer-close-btn {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 36px;
   height: 36px;
+  min-width: 36px;
+  min-height: 36px;
+  flex-shrink: 0;
+  margin-left: auto;
   border-radius: var(--radius-sm);
   border: 1px solid var(--border-color);
   color: var(--text-main);
+  background-color: var(--bg-surface);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.drawer-close-btn:hover {
+  border-color: var(--color-sprout);
+  color: var(--color-sprout);
+  background-color: rgba(82, 183, 136, 0.12);
 }
 
 .drawer-close-btn svg {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  min-height: 18px;
+  stroke: currentColor;
+  stroke-width: 2.2;
 }
 
 /* Mobile Nav List & Accordion */
@@ -950,13 +1020,18 @@ html[dir="rtl"] .nav-dropdown {
 
 html[dir="rtl"] .mobile-drawer {
   right: auto;
-  left: -320px;
+  left: -340px;
   border-left: none;
   border-right: 1px solid var(--border-color);
 }
 
 html[dir="rtl"] .mobile-drawer.open {
-  transform: translateX(320px);
+  transform: translateX(340px);
+}
+
+html[dir="rtl"] .drawer-close-btn {
+  margin-left: 0;
+  margin-right: auto;
 }
 
 html[dir="rtl"] .mobile-accordion {
@@ -1271,9 +1346,15 @@ html[dir="rtl"] #scroll-to-top {
    HOME 1 - SECTION 1: HERO (Asymmetric Panoramic with Live Soil Metric)
    ========================================================================== */
 .h1-hero-section {
-  padding: 4.5rem 0 3.5rem;
-  background: radial-gradient(circle at 10% 20%, rgba(82, 183, 136, 0.08) 0%, transparent 60%);
   position: relative;
+  min-height: calc(100vh - var(--header-height));
+  min-height: calc(100dvh - var(--header-height));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+  box-sizing: border-box;
+  background: radial-gradient(circle at 10% 20%, rgba(82, 183, 136, 0.08) 0%, transparent 60%);
   overflow: hidden;
 }
 
@@ -1285,6 +1366,8 @@ html[dir="rtl"] #scroll-to-top {
   grid-template-columns: 1.15fr 1fr;
   align-items: center;
   gap: 3.5rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .h1-hero-content {
@@ -2294,11 +2377,13 @@ html.dark .cta-banner-bg {
    ========================================================================== */
 .h2-hero-section {
   position: relative;
-  min-height: 580px;
+  min-height: calc(100vh - var(--header-height));
+  min-height: calc(100dvh - var(--header-height));
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4.5rem 0 3.5rem;
+  padding: 3rem 0;
+  box-sizing: border-box;
   overflow: hidden;
   border-bottom: 1px solid var(--border-color);
 }
@@ -2959,14 +3044,16 @@ html[dir="rtl"] .silvo-floating-tag {
    ========================================================================== */
 .inner-hero-section {
   position: relative;
+  height: 520px;
   min-height: 520px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5.5rem 0 4.5rem;
+  padding: 0;
   overflow: hidden;
   border-bottom: 1px solid var(--border-color);
   background-color: var(--bg-main);
+  box-sizing: border-box;
   transition: background-color var(--transition-normal);
 }
 
