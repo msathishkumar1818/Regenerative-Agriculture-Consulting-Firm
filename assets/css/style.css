@@ -468,23 +468,26 @@ html.dark .nav-dropdown {
 
 /* Header Action Controls (RTL, Dark Mode, CTA) */
 .header-actions {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  flex-shrink: 0;
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  flex-shrink: 0 !important;
 }
 
 .tool-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--border-color);
+  width: 40px;
+  height: 40px;
+  min-height: 40px;
+  max-height: 40px;
+  border-radius: 8px;
+  border: 1.5px solid var(--border-color);
   color: var(--text-main);
-  background-color: transparent;
+  background-color: var(--bg-surface);
   transition: all var(--transition-fast);
+  box-sizing: border-box;
 }
 
 .tool-btn:hover {
@@ -494,22 +497,26 @@ html.dark .nav-dropdown {
 }
 
 .tool-btn svg {
-  width: 18px;
-  height: 18px;
+  width: 19px;
+  height: 19px;
 }
 
 .tool-btn.rtl-toggle-btn {
   width: auto;
-  min-width: 46px;
-  height: 36px;
-  padding: 0 0.75rem;
+  min-width: 48px;
+  height: 40px;
+  min-height: 40px;
+  max-height: 40px;
+  padding: 0 0.85rem;
   font-family: var(--font-heading);
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   font-weight: 800;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   user-select: none;
   justify-content: center;
+  border-radius: 8px;
+  box-sizing: border-box;
 }
 
 .tool-btn.rtl-toggle-btn svg,
@@ -519,6 +526,18 @@ html.dark .nav-dropdown {
 
 .tool-btn.rtl-toggle-btn .rtl-text {
   line-height: 1;
+}
+
+html.dark .tool-btn {
+  background-color: #0A0A0A;
+  border-color: var(--border-color);
+  color: #FFFFFF;
+}
+
+html.dark .tool-btn:hover {
+  background-color: rgba(82, 183, 136, 0.18);
+  border-color: #52B788;
+  color: #52B788;
 }
 
 .btn-cta,
@@ -594,13 +613,15 @@ html.dark .nav-dropdown {
   vertical-align: middle;
 }
 
-/* Header Action CTA Button (Compact) */
+/* Header Action CTA Button (Compact - Exactly Even with Tool Buttons) */
 .header-actions .btn-cta {
-  height: 38px;
-  min-height: 38px;
-  max-height: 38px;
-  padding: 0 1rem;
-  font-size: 0.84rem;
+  height: 40px !important;
+  min-height: 40px !important;
+  max-height: 40px !important;
+  padding: 0 1.25rem !important;
+  font-size: 0.86rem !important;
+  border-radius: 8px !important;
+  box-sizing: border-box !important;
 }
 
 /* Mobile Toggle Button */
@@ -2997,9 +3018,6 @@ html[dir="rtl"] .silvo-floating-tag {
 }
 
 .inner-hero-title .hero-accent {
-  background: none;
-  -webkit-background-clip: unset;
-  -webkit-text-fill-color: initial;
   color: #1B4332;
   font-weight: 800;
   text-shadow: 0 1px 3px rgba(255, 255, 255, 0.95);
@@ -3096,9 +3114,6 @@ html.dark .inner-hero-title {
 }
 
 html.dark .inner-hero-title .hero-accent {
-  background: none;
-  -webkit-background-clip: unset;
-  -webkit-text-fill-color: initial;
   color: #52B788;
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.9);
 }
