@@ -113,13 +113,11 @@
         </button>
 
         <!-- Dark Mode Toggle (#000000 Strict) -->
-        <button type="button" class="tool-btn theme-toggle-btn" aria-label="Toggle dark mode"
-          title="Toggle Dark/Light Mode">
+        <button type="button" class="tool-btn theme-toggle-btn" aria-label="Switch to dark mode"
+          title="Switch to Dark Mode">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
             stroke-linejoin="round" aria-hidden="true">
-            <circle cx="12" cy="12" r="5" />
-            <path
-              d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
           </svg>
         </button>
 
@@ -214,12 +212,10 @@
     <!-- Mobile Drawer Footer Tools -->
     <div class="drawer-footer">
       <div class="drawer-tools">
-        <button type="button" class="drawer-tool-item theme-toggle-btn" aria-label="Toggle dark mode">
+        <button type="button" class="drawer-tool-item theme-toggle-btn" aria-label="Switch to dark mode">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            aria-hidden="true">
-            <circle cx="12" cy="12" r="5" />
-            <path
-              d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
           </svg>
           <span>Dark Mode</span>
         </button>
@@ -562,7 +558,110 @@
     </section>
 
     <!-- =====================================================================
-         SECTION 4: SPECIMEN EXTRACTION GUIDELINES (4-Step Bar)
+         SECTION 4: INTERACTIVE REGIONAL MAP & FACILITY LOCATOR
+         ===================================================================== -->
+    <section class="contact-map-section" id="contactMapSection" aria-labelledby="mapSectionTitle">
+      <div class="contact-map-container">
+
+        <div class="section-header section-header-centered text-center">
+          <div class="badge-tag">Facility Locator</div>
+          <h2 id="mapSectionTitle" class="section-title">Locate Our Laboratories & Field Hubs</h2>
+          <p class="section-subtitle">
+            Find our accredited diagnostic laboratories, research hubs, and cold-chain sample intake depots across the
+            country. Select a facility to view its map location, hours, and direct navigation routes.
+          </p>
+        </div>
+
+        <div class="map-interactive-wrapper">
+
+          <!-- Left: Location Selection Hub Cards -->
+          <div class="map-locations-sidebar" role="tablist" aria-label="Diagnostic Hub Locations">
+
+            <!-- Card 1: Des Moines (Default Active) -->
+            <div class="map-location-card active" role="tab" tabindex="0" aria-selected="true"
+              data-name="Des Moines Agronomic Hub (Central Headquarters)"
+              data-address="742 Agronomy Parkway, Suite 400, Des Moines, IA 50309" data-phone="+1 (515) 348-7710"
+              data-hours="Mon – Fri: 7:00 AM – 6:00 PM CST (24/7 Cold-Chain Intake)"
+              data-map-url="https://maps.google.com/maps?q=742+Agronomy+Parkway,+Des+Moines,+IA+50309&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+              data-directions="https://www.google.com/maps/dir/?api=1&amp;destination=742+Agronomy+Parkway+Des+Moines+IA+50309">
+              <div class="map-card-header">
+                <span class="map-card-badge">Central Headquarters</span>
+                <span class="map-card-status"><span class="status-indicator"></span> 24/7 Specimen Drop</span>
+              </div>
+              <h3 class="map-card-title">Des Moines Agronomic Hub</h3>
+              <p class="map-card-address">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <span>742 Agronomy Parkway, Suite 400, Des Moines, IA 50309</span>
+              </p>
+              <div class="map-card-footer">
+                <span class="map-card-phone">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                  </svg>
+                  +1 (515) 348-7710
+                </span>
+                <span class="map-select-prompt">View on Map &rarr;</span>
+              </div>
+            </div>
+
+            <!-- Card 2: Santa Rosa Bio-Lab -->
+            <div class="map-location-card" role="tab" tabindex="0" aria-selected="false"
+              data-name="Santa Rosa Bio-Lab (Pacific &amp; Mediterranean)"
+              data-address="1280 Vineyard Ridge Way, Bldg B, Santa Rosa, CA 95403" data-phone="+1 (707) 829-4420"
+              data-hours="Mon – Fri: 7:30 AM – 5:30 PM PST"
+              data-map-url="https://maps.google.com/maps?q=1280+Vineyard+Ridge+Way,+Santa+Rosa,+CA+95403&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+              data-directions="https://www.google.com/maps/dir/?api=1&amp;destination=1280+Vineyard+Ridge+Way+Santa+Rosa+CA+95403">
+              <div class="map-card-header">
+                <span class="map-card-badge">Pacific Diagnostic Lab</span>
+                <span class="map-card-status"><span class="status-indicator"></span> Biological Lab</span>
+              </div>
+              <h3 class="map-card-title">Santa Rosa Bio-Lab</h3>
+              <p class="map-card-address">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <span>1280 Vineyard Ridge Way, Bldg B, Santa Rosa, CA 95403</span>
+              </p>
+              <div class="map-card-footer">
+                <span class="map-card-phone">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                  </svg>
+                  +1 (707) 829-4420
+                </span>
+                <span class="map-select-prompt">View on Map &rarr;</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Map Display Area -->
+          <div class="map-display-panel">
+            <div class="map-frame-box">
+              <iframe id="contactMapIframe" class="contact-map-iframe"
+                src="https://maps.google.com/maps?q=742+Agronomy+Parkway,+Des+Moines,+IA+50309&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                width="100%" height="480" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" title="Google Map showing Des Moines Agronomic Hub location">
+              </iframe>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECTION 5: SPECIMEN EXTRACTION GUIDELINES (4-Step Bar)
          ===================================================================== -->
     <section class="contact-guidelines-section" aria-labelledby="guidelinesTitle">
       <div class="contact-guidelines-container">
@@ -619,7 +718,7 @@
     </section>
 
     <!-- =====================================================================
-         SECTION 5: HOTLINE ACTION BANNER (Final Punchy CTA)
+         SECTION 6: HOTLINE ACTION BANNER (Final Punchy CTA)
          ===================================================================== -->
     <section class="contact-hotline-section" aria-labelledby="hotlineCtaTitle">
       <div class="contact-hotline-container">

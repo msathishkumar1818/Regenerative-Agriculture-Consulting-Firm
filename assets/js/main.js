@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileDrawer();
   initScrollToTop();
   highlightActiveNav();
+  initMapTabs();
 });
 
 /* -------------------------------------------------------------------------
@@ -35,6 +36,9 @@ function initTheme() {
   themeToggles.forEach(btn => {
     btn.addEventListener('click', toggleTheme);
   });
+
+  // Ensure theme icon correctly reflects active theme immediately on page initialization
+  updateThemeIcons();
 }
 
 function toggleTheme() {
@@ -46,8 +50,31 @@ function toggleTheme() {
 function updateThemeIcons() {
   const isDark = document.documentElement.classList.contains('dark');
   const themeToggles = document.querySelectorAll('.theme-toggle-btn');
+
+  // Sun icon for dark mode (click to switch to light mode)
+  const sunIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <circle cx="12" cy="12" r="5" />
+    <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+  </svg>`;
+
+  // Moon icon for light mode (click to switch to dark mode)
+  const moonIcon = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+  </svg>`;
+
   themeToggles.forEach(btn => {
     btn.setAttribute('aria-label', isDark ? 'Switch to light mode' : 'Switch to dark mode');
+    btn.setAttribute('title', isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode');
+
+    const svg = btn.querySelector('svg');
+    if (svg) {
+      svg.outerHTML = isDark ? sunIcon : moonIcon;
+    }
+
+    const span = btn.querySelector('span');
+    if (span) {
+      span.textContent = isDark ? 'Light Mode' : 'Dark Mode';
+    }
   });
 }
 
@@ -348,6 +375,41 @@ function initScrollToTop() {
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
+    });
+  });
+}
+
+/* -------------------------------------------------------------------------
+   9. Contact Page Interactive Facility Map Tabs
+   ------------------------------------------------------------------------- */
+function initMapTabs() {
+  const mapCards = document.querySelectorAll('.map-location-card');
+  const mapIframe = document.getElementById('contactMapIframe');
+
+  if (!mapCards.length || !mapIframe) return;
+
+  mapCards.forEach(card => {
+    const activateCard = () => {
+      mapCards.forEach(c => {
+        c.classList.remove('active');
+        c.setAttribute('aria-selected', 'false');
+      });
+
+      card.classList.add('active');
+      card.setAttribute('aria-selected', 'true');
+
+      const mapUrl = card.getAttribute('data-map-url');
+      if (mapUrl && mapIframe.src !== mapUrl) {
+        mapIframe.src = mapUrl;
+      }
+    };
+
+    card.addEventListener('click', activateCard);
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        activateCard();
+      }
     });
   });
 }

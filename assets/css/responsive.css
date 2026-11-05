@@ -15,6 +15,7 @@
 .contact-hero-container,
 .contact-studio-container,
 .contact-hubs-container,
+.contact-map-container,
 .contact-guidelines-container,
 .contact-hotline-container,
 .sci-hero-container,
@@ -239,6 +240,19 @@
   .hubs-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.25rem;
+  }
+
+  .contact-map-section {
+    padding: 4rem 0;
+  }
+
+  .map-interactive-wrapper {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  .map-frame-box {
+    height: 420px;
   }
 
   .guidelines-grid {
@@ -653,6 +667,15 @@
 
   .hubs-grid {
     grid-template-columns: 1fr;
+  }
+
+  .contact-map-section {
+    padding: 3.5rem 0;
+  }
+
+  .map-frame-box {
+    height: 380px;
+    min-height: 380px;
   }
 
   .guidelines-grid {
@@ -1383,6 +1406,18 @@
   .contact-hotline-inner h2 {
     font-size: 1.35rem;
   }
+
+  .contact-map-section {
+    padding: 2.5rem 0;
+  }
+
+  .map-frame-box {
+    height: 300px;
+  }
+
+  .map-location-card {
+    padding: 1rem 1.15rem;
+  }
 }
 
 /* ==========================================================================
@@ -1418,13 +1453,15 @@
   }
 
   /* 2. Top-Right: Firm Column (Row 1, Col 2) */
-  .footer-col:nth-of-type(1) {
+  .footer-top > :nth-child(2),
+  .footer-col:nth-of-type(2) {
     grid-column: 2 / 3 !important;
     grid-row: 1 !important;
   }
 
   /* 3. Bottom-Left: Navigation Column (Row 2, Col 1) */
-  .footer-col:nth-of-type(2) {
+  .footer-top > :nth-child(3),
+  .footer-col:nth-of-type(3) {
     grid-column: 1 / 2 !important;
     grid-row: 2 !important;
   }
@@ -1432,7 +1469,7 @@
   .footer-col .footer-nav-list {
     display: flex !important;
     flex-direction: column !important;
-    gap: 0.7rem !important;
+    gap: 0.75rem !important;
   }
 
   /* 4. Bottom-Right: Agronomic Bulletin Newsletter (Row 2, Col 2) */
@@ -1545,7 +1582,7 @@
   .footer-col .footer-nav-list {
     display: flex !important;
     flex-direction: column !important;
-    gap: 0.5rem !important;
+    gap: 0.75rem !important;
   }
 
   .footer-bottom {
